@@ -4,22 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinesipo</title>
-    <script>  function validateForm() {
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-
-        // Simple validation - Check if the fields are not empty
-        if (username.trim() === '' || password.trim() === '') {
-            alert('Username and password are required!');
-        } else {
-            // You can add additional validation or submit the form here
-            //alert('Login successful!');//
-            //document.getElementById("TinesipoLoginForm").action = "Page2.html";
-            window.location.href = 'Home.html';
-            //document.getElementById('TinesipoLoginForm').submit();
-        }
-        }
-     </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,6 +39,7 @@
             cursor: pointer;
         }
     </style>
+    <script src="Script.js">  </script> 
 </head>
 <body>
     <div class="login-container">

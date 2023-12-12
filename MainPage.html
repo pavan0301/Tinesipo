@@ -13,9 +13,9 @@
             alert('Username and password are required!');
         } else {
             // You can add additional validation or submit the form here
-            alert('Login successful!');
+            //alert('Login successful!');//
             //document.getElementById("TinesipoLoginForm").action = "Page2.html";
-            //window.location.href = '/Page2.html';
+            window.location.href = 'Home.html';
             //document.getElementById('TinesipoLoginForm').submit();
         }
         }
@@ -60,14 +60,21 @@
     <div class="login-container">
         <h2>Welcome to Tinesipo - Ultimate food shop</h2>
         <!--action="Page2.html --> 
-        <form action="Home.html" name="TinesipoLoginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit" onclick="validateForm()" >Login</button>
+        <!--
+        <form onsubmit="validateForm()" name="TinesipoLoginForm">
             <h1>Login to our page</h1>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <button type="submit" onclick="validateForm()">Login</button>
+            <button type="submit" >Login</button>
         </form>
+       -->
     </div>
 </body>
 </html>

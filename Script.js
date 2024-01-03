@@ -27,7 +27,7 @@ function validateForm() {
                 "email": username,
                // "firstName": "John",
                // "lastName": "Smith",
-                "signUpDate": Date.now()), //unix time in ms
+                "signUpDate": Date.now(), //unix time in ms
                // "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
                // "price" : 95.5,
                 //"userHash": "" // optional transient for HMAC identification

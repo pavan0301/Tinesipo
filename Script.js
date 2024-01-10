@@ -22,7 +22,7 @@
                 "id":"Pendo"
             }
         });
-});
+})('107c2b1f-2461-49e9-5042-5296daed144d');
 
 //Tinesipo Login form
 function validateForm() {

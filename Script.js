@@ -7,12 +7,22 @@
       (window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-5IWGNRKDCLOF-2");
 
 //Pendo Tag
+(function(apiKey){
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
     v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
         o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
         y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
-        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})
-        (window,document,'script','pendo');
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo')
+    
+    pendo.initialize({
+            visitor: {
+                "id":username
+            },
+            account: {
+                "id":"Pendo"
+            }
+        });
+});
 
 //Tinesipo Login form
 function validateForm() {
@@ -28,7 +38,6 @@ function validateForm() {
             //alert('Login successful!');//
 
 //passing user and account objects:
-            //GS PX Indentity Call
                 aptrinsic("identify",
                 {
                 //User Fields
@@ -47,16 +56,8 @@ function validateForm() {
                 "name":"Tinesipo",
                 "Program": "Platinum" // flat custom attributes
                 });
-            
-    //Pendo Initialise call
-        pendo.initialize({
-            visitor: {
-            "id":username},
-        account: {
-            "id":"Pendo"}
-        });        
             window.location.href = 'Home.html';
             //document.getElementById('TinesipoLoginForm').submit();
         }
-        }
+        };
     

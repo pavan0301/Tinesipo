@@ -6,24 +6,6 @@
       })
       (window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-5IWGNRKDCLOF-2");
 
-//Pendo Tag
-(function(apiKey){
-    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
-    v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
-        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
-        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-    
-    pendo.initialize({
-            visitor: {
-                "id":username
-            },
-            account: {
-                "id":"Pendo"
-            }
-        });
-})('107c2b1f-2461-49e9-5042-5296daed144d');
-
 //Tinesipo Login form
 function validateForm() {
         var username = document.getElementById('username').value;
@@ -56,6 +38,23 @@ function validateForm() {
                 "name":"Tinesipo",
                 "Program": "Platinum" // flat custom attributes
                 });
+                //Pendo Installation
+                (function(apiKey){
+                    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+                    v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+                        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+                        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+                        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+                    
+                    pendo.initialize({
+                            visitor: {
+                                "id":username
+                            },
+                            account: {
+                                "id":"Pendo"
+                            }
+                        });
+                })('107c2b1f-2461-49e9-5042-5296daed144d');
             window.location.href = 'Home.html';
             //document.getElementById('TinesipoLoginForm').submit();
         }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinesipo - Recipe</title>
+    <title>NoshNest Bistro-Recipes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -110,19 +110,19 @@
 </head>
 <body>
     <header>
-        <h1>Tinesipo.....</h1>
+        <h1>NoshNest Bistro</h1>
     </header>
     <nav>
         <a href="Home.html" id="r-homepage">Home</a>
         <a href="About.html" id="r-about">About</a>
         <a href="Services.html" id="r-services">Services</a>
-        <a href="#" id="r-recipe">Recipe</a>
+        <a href="#" id="r-recipe">Recipes</a>
         <a href="Contact.html" id="r-contact">Contact</a>
         <a href="MainPage.html" id="r-mainpage">Logout</a>
     </nav>
     <div>
         <header>
-            <h1>Our Top Recipe's</h1>
+            <h1>Our Top Recipes</h1>
         </header>
             <section>
                 <div class="tile-container">
@@ -266,6 +266,7 @@
 
     <script>
         function showReciepe(dailogid) {
+            closeDialog();
             document.getElementById(dailogid).style.display="flow-root";
         }
         function closeDialog() {

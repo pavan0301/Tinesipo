@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with Search</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+        }
+
+        th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        }
+
+        th {
+        background-color: #f2f2f2;
+        }
+
+        input[type="text"] {
+        padding: 8px;
+        margin-top: 10px;
+        }
+  </style>
+  <script src="Script.js">  </script> 
+</head>
+<body>
+    <header>
+        <h1>NoshNest Bistro</h1>
+    </header>
+
+    <nav>
+        <a href="Home.html" id="m-homepage">Home</a>
+        <a href="About.html" id="m-about">About</a>
+        <a href="Services.html" id="m-services">Services</a>
+        <a href="Recipe.html" id="m-recipe">Recipes</a>
+        <a href="#" id="m-menu">Menu</a>
+        <a href="Contact.html" id="m-contact">Contact</a>
+        <a href="MainPage.html" id="m-mainpage">Logout</a>
+    </nav>
+    <section>
+      <input type="text" id="searchInput" placeholder="Search...">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td>Alfredo Penne</td>
+                        <td>1</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Tandoori Chicken</td>
+                        <td>1/2 Plate or 1 Plate</td>
+                        <td>15 / 25</td>
+                    </tr>
+                    <tr>
+                        <td>Masala Omlet</td>
+                        <td>Single / Double</td>
+                        <td>5 / 8</td>
+                    </tr>
+                    <tr>
+                        <td>Mushroom Pizza</td>
+                        <td>Regular(4) / Medium(6) / Large(8)</td>
+                        <td>10 / 18 / 25</td>
+                    </tr>
+                    <tr>
+                        <td>French Fries</td>
+                        <td>Regular / Medium / Large</td>
+                        <td>2 / 3.5 / 5</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+        </table>
+    </section>
+    <footer>
+        <p>&copy; 2023 NoshNest Bistro. All rights reserved.</p>
+    </footer>
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function() {
+      let filter = this.value.toLowerCase();
+      let rows = document.getElementById('data-table').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+      for (let i = 0; i < rows.length; i++) {
+        let name = rows[i].getElementsByTagName('td')[0].innerText.toLowerCase();
+        let email = rows[i].getElementsByTagName('td')[1].innerText.toLowerCase();
+        let age = rows[i].getElementsByTagName('td')[2].innerText.toLowerCase();
+
+        if (name.includes(filter) || email.includes(filter) || age.includes(filter)) {
+          rows[i].style.display = '';
+        } else {
+          rows[i].style.display = 'none';
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -106,47 +106,47 @@
             </thead>
                 <tbody>
                     <tr>
-                        <td>Alfredo Penne</td>
-                        <td>01</td>
+                        <td>Alfredo Penne (Both)</td>
+                        <td>Veg / Mushroom / Chicken</td>
                         <td>10</td>
                     </tr>
                     <tr>
-                        <td>Tandoori Chicken</td>
+                        <td>Tandoori Chicken (Non-Veg)</td>
                         <td>1/2 Plate or 1 Plate</td>
                         <td>15 / 25</td>
                     </tr>
                     <tr>
-                        <td>Masala Omlet</td>
+                        <td>Masala Omlet (Egg)</td>
                         <td>Single / Double</td>
                         <td>5 / 8</td>
                     </tr>
                     <tr>
-                        <td>Mushroom Pizza</td>
+                        <td>Mushroom Pizza (Both)</td>
                         <td>Regular(4) / Medium(6) / Large(8)</td>
                         <td>10 / 18 / 25</td>
                     </tr>
                     <tr>
-                        <td>French Fries</td>
+                        <td>French Fries (Veg)</td>
                         <td>Regular / Medium / Large</td>
                         <td>2 / 3.5 / 5</td>
                     </tr>
                     <tr>
-                        <td>Lasange</td>
+                        <td>Lasange (Veg)</td>
                         <td>01</td>
                         <td>15</td>
                     </tr>
                     <tr>
-                        <td>Garlic Bread</td>
+                        <td>Garlic Bread (Veg)</td>
                         <td>Normal / Cheese / Cheese Garlic</td>
                         <td>2 / 3.5 / 5</td>
                     </tr>
                     <tr>
-                        <td>Fried Rice</td>
+                        <td>Fried Rice (Both)</td>
                         <td>Veg / Egg / Chicken / Mutton / All Mixed</td>
                         <td>8 / 10 / 12 / 13 / 15</td>
                     </tr>
                     <tr>
-                        <td>Butter Gralic Prawns</td>
+                        <td>Butter Gralic Prawns (Non-Veg)</td>
                         <td>01</td>
                         <td>8</td>
                     </tr>
@@ -163,11 +163,11 @@
       let rows = document.getElementById('data-table').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
 
       for (let i = 0; i < rows.length; i++) {
-        let name = rows[i].getElementsByTagName('td')[0].innerText.toLowerCase();
-        let email = rows[i].getElementsByTagName('td')[1].innerText.toLowerCase();
-        let age = rows[i].getElementsByTagName('td')[2].innerText.toLowerCase();
+        let item = rows[i].getElementsByTagName('td')[0].innerText.toLowerCase();
+        let quantity = rows[i].getElementsByTagName('td')[1].innerText.toLowerCase();
+        let price = rows[i].getElementsByTagName('td')[2].innerText.toLowerCase();
 
-        if (name.includes(filter) || email.includes(filter) || age.includes(filter)) {
+        if (item.includes(filter) || quantity.includes(filter) || price.includes(filter)) {
           rows[i].style.display = '';
         } else {
           rows[i].style.display = 'none';

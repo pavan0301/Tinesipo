@@ -10,6 +10,7 @@
 function validateForm() {
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
+        var companyname = document.getElementById('companyname').value;
 
         // Simple validation - Check if the fields are not empty
         if (username.trim() === '' || password.trim() === '') {

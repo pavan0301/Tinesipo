@@ -35,7 +35,7 @@ function validateForm() {
                 {
                 //Account Fields
                 "id":"PX TNSP", //Required
-                "name":"Tinesipo",
+                "name": companyname,
                 "Program": "Platinum" // flat custom attributes
                 });
             window.location.href = 'Home.html';

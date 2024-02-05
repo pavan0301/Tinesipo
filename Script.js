@@ -35,7 +35,7 @@ function validateForm() {
                 },
                 {
                 //Account Fields
-                "id":"PX TNSP", //Required
+                "id": companyname, //Required
                 "name": companyname,
                 "Program": "Platinum" // flat custom attributes
                 });

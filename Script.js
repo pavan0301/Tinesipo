@@ -5,7 +5,12 @@
       var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
       })
       (window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-5IWGNRKDCLOF-2");
-
+//Product Fruit
+(function(w,d,u){
+        w.$productFruits = w.$productFruits || [];
+        w.productFruits=w.productFruits||{ };w.productFruits.scrV='2';
+        let a=d.getElementsByTagName('head')[0];let r=d.createElement('script');r.async=1;r.src=u;a.appendChild(r);
+    })(window,document,'https://app.productfruits.com/static/script.js');
 //Tinesipo Login form
 function validateForm() {
         var username = document.getElementById('username').value;
@@ -41,6 +46,7 @@ function validateForm() {
                 });
             window.location.href = 'Home.html';
             //document.getElementById('TinesipoLoginForm').submit();
+            $productFruits.push(['init', 'default', 'en', { username: '<<REPLACE>>' }]);
         }
         };
     

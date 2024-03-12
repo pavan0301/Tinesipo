@@ -342,9 +342,9 @@
            
             if (checkReading.read)
             {
-                var data = '';
+                var data = '{"RecipeName": "' + this.id + '","IsRead" : "true" }';
                 console.log(data);
-                aptrinsic('track', 'RecipeScrollEndCE', {"RecipeName": "' + this.id + '","IsRead" : "true" }); 
+                aptrinsic('track', 'RecipeScrollEndCE', JSON.parse(data) ); 
 
                 console.log(this.id);
                 console.log("You are at the end");

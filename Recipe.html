@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,20 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
+
         nav {
             display: flex;
             justify-content: center;
             background-color: #444;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
@@ -28,9 +32,11 @@
             display: block;
             text-align: center;
         }
+
         nav a:hover {
             background-color: #555;
         }
+
         section {
             max-width: 1000px;
             height: 100%;
@@ -39,21 +45,26 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             color: #fff;
         }
+
         h2 {
             color: #333;
         }
+
         p {
             line-height: 1.6;
         }
+
         footer {
             background-color: #00a2dc;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
+
         .tile-container {
             display: flex;
             height: 100px;
@@ -63,23 +74,26 @@
             font-size: medium;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             gap: 75px;
-            }
+        }
+
         .tile {
             display: flex;
             align-items: center;
             justify-content: space-around;
             flex-wrap: wrap;
             margin: 20px auto;
-            padding: 20px ;
+            padding: 20px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #fff;
-            box-shadow: 0px 4px 10px rgba(0,0,0,.1);
-            background: linear-gradient(#00a2dc, rgb(220, 11, 143)) padding-box,linear-gradient(87.92deg, #FBC65F -89.51%, #ACD7F2 96.37%, #EB6D90 267.38%) border-box;            
-            border: 4px solid rgba(0,0,0,0);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+            background: linear-gradient(#00a2dc, rgb(220, 11, 143)) padding-box, linear-gradient(87.92deg, #FBC65F -89.51%, #ACD7F2 96.37%, #EB6D90 267.38%) border-box;
+            border: 4px solid rgba(0, 0, 0, 0);
         }
+
         .tile:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
+
         .dialog-box {
             top: 320px;
             left: 300px;
@@ -92,11 +106,13 @@
             box-shadow: 0 4px 8px rgba(66, 121, 163, 0.1);
             display: none;
         }
+
         .dialog-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
         }
+
         .dialog-content {
             height: 200px;
             max-width: 800px;
@@ -106,8 +122,9 @@
             margin: 15px auto;
         }
     </style>
-    <script src="Script.js">  </script> 
+    <script src="Script.js">  </script>
 </head>
+
 <body>
     <header>
         <h1>NoshNest Bistro</h1>
@@ -125,44 +142,52 @@
         <header>
             <h1>Our Top Recipes</h1>
         </header>
-            <section>
-                <div class="tile-container">
-                    <div class="tile" id="alfredopenne" onclick="showReciepe('alfredopennerecipe')">Alfredo Penne</div>
-                    <div class="tile" id="tandoorichicken" onclick="showReciepe('tandoorichickenrecipe')"> Tandoori Chicken </div>
-                    <div class="tile" id="masalaomlet" onclick="showReciepe('masalaomletrecipe')"> Masala Omlet </div>
-                    <div class="tile" id="mushroompizza" onclick="showReciepe('mushroompizzarecipe')"> Mushroom Pizza </div>
-                  </div>
-            </section>
+        <section>
+            <div class="tile-container">
+                <div class="tile" id="alfredopenne" onclick="showReciepe('alfredopennerecipe')">Alfredo Penne</div>
+                <div class="tile" id="tandoorichicken" onclick="showReciepe('tandoorichickenrecipe')"> Tandoori Chicken
+                </div>
+                <div class="tile" id="masalaomlet" onclick="showReciepe('masalaomletrecipe')"> Masala Omlet </div>
+                <div class="tile" id="mushroompizza" onclick="showReciepe('mushroompizzarecipe')"> Mushroom Pizza </div>
+            </div>
+        </section>
     </div>
     <div class="dialog-box" id="alfredopennerecipe">
         <div class="dialog-title">Alfredo Penne</div>
-        <div class="dialog-content">
-        <p><b>Ingredients:</b></p>
-        <p>1 pound (450g) penne pasta<br>
-            1/2 cup (1 stick) unsalted butter<br>
-            2 cups heavy cream<br>
-            2 cups grated Parmesan cheese<br>
-            Salt and black pepper, to taste<br>
-            1/2 teaspoon garlic powder (optional)<br>
-            Fresh parsley, chopped, for garnish (optional)<br>
-        </p>
-        <p><b>Instructions:</b></p>
-        <p>
-            1. Cook the Penne: Boil a large pot of salted water and cook the penne pasta according to the package instructions until al dente. Drain the pasta and set aside.
-            <br>2. Make the Alfredo Sauce: In a large skillet or saucepan, melt the butter over medium heat. Once melted, add the heavy cream and bring it to a simmer.
-            <br>3. Add Parmesan: Gradually add the grated Parmesan cheese to the simmering cream, stirring continuously to ensure it melts evenly. Continue stirring until the sauce thickens and becomes smooth.
-            <br>4. Season the Sauce: Season the Alfredo sauce with salt, black pepper, and garlic powder to taste. Remember that Parmesan is salty, so adjust the salt accordingly.
-            <br>5. Combine Pasta and Sauce: Add the cooked and drained penne pasta to the Alfredo sauce. Toss the pasta gently until it is well coated with the sauce.
-            <br>6. Garnish: If desired, garnish the Alfredo Penne with chopped fresh parsley for a burst of color and added flavor.
-            <br>7. Serve: Serve the Alfredo Penne hot, and optionally, you can sprinkle extra Parmesan cheese on top when serving.
-        </p>
+        <div class="dialog-content" id="alfredopennerecipe_dc">
+            <p><b>Ingredients:</b></p>
+            <p>1 pound (450g) penne pasta<br>
+                1/2 cup (1 stick) unsalted butter<br>
+                2 cups heavy cream<br>
+                2 cups grated Parmesan cheese<br>
+                Salt and black pepper, to taste<br>
+                1/2 teaspoon garlic powder (optional)<br>
+                Fresh parsley, chopped, for garnish (optional)<br>
+            </p>
+            <p><b>Instructions:</b></p>
+            <p>
+                1. Cook the Penne: Boil a large pot of salted water and cook the penne pasta according to the package
+                instructions until al dente. Drain the pasta and set aside.
+                <br>2. Make the Alfredo Sauce: In a large skillet or saucepan, melt the butter over medium heat. Once
+                melted, add the heavy cream and bring it to a simmer.
+                <br>3. Add Parmesan: Gradually add the grated Parmesan cheese to the simmering cream, stirring
+                continuously to ensure it melts evenly. Continue stirring until the sauce thickens and becomes smooth.
+                <br>4. Season the Sauce: Season the Alfredo sauce with salt, black pepper, and garlic powder to taste.
+                Remember that Parmesan is salty, so adjust the salt accordingly.
+                <br>5. Combine Pasta and Sauce: Add the cooked and drained penne pasta to the Alfredo sauce. Toss the
+                pasta gently until it is well coated with the sauce.
+                <br>6. Garnish: If desired, garnish the Alfredo Penne with chopped fresh parsley for a burst of color
+                and added flavor.
+                <br>7. Serve: Serve the Alfredo Penne hot, and optionally, you can sprinkle extra Parmesan cheese on top
+                when serving.
+            </p>
         </div>
         <button class="close-button" onclick="closeDialog()">Close</button>
-    </div> 
+    </div>
     <div class="dialog-box" id="tandoorichickenrecipe">
         <div class="dialog-title">Tandoori Chicken</div>
-        <div class="dialog-content">
-        <p><b>Ingredients:</b></p>
+        <div class="dialog-content" id="tandoorichickenrecipe_dc">
+            <p><b>Ingredients:</b></p>
             <p>2 lbs (about 1 kg) chicken pieces (drumsticks, thighs, or a mix)<br>
                 1 cup plain yogurt<br>
                 3 tablespoons Tandoori masala spice blend<br>
@@ -180,87 +205,112 @@
             </p>
             <p>Instructions:</p>
             <p>
-                1.) Make Deep Cuts: Use a sharp knife to make deep cuts or slashes in the chicken pieces. This helps the marinade penetrate the meat, giving it more flavor.
-                <br>2.) Prepare Marinade: In a large bowl, combine yogurt, Tandoori masala, ginger paste, garlic paste, ground cumin, ground coriander, smoked paprika, turmeric, cayenne pepper, lemon juice, salt, and vegetable oil. Mix well to form a smooth marinade.
-                <br>3.) Marinate the Chicken: Coat the chicken pieces thoroughly with the marinade, making sure to get it into the cuts. For best results, cover the bowl and let it marinate in the refrigerator for at least 2-4 hours, or preferably overnight.
-                <br>4.) Preheat the Oven or Grill: Preheat your oven to 400°F (200°C) or heat a grill to medium-high heat.
-                <br>5.) Cook the Tandoori Chicken: If using an oven, place the marinated chicken on a baking sheet lined with aluminum foil. Bake for about 25-30 minutes or until the chicken is cooked through, turning once halfway through the cooking time. If grilling, cook for a similar amount of time, turning occasionally until the chicken is cooked.
-                <br>6.) Garnish and Serve: Once cooked, garnish the Tandoori Chicken with fresh cilantro and lemon wedges. Serve hot with naan or rice and your favorite chutney or yogurt sauce.
+                1.) Make Deep Cuts: Use a sharp knife to make deep cuts or slashes in the chicken pieces. This helps the
+                marinade penetrate the meat, giving it more flavor.
+                <br>2.) Prepare Marinade: In a large bowl, combine yogurt, Tandoori masala, ginger paste, garlic paste,
+                ground cumin, ground coriander, smoked paprika, turmeric, cayenne pepper, lemon juice, salt, and
+                vegetable oil. Mix well to form a smooth marinade.
+                <br>3.) Marinate the Chicken: Coat the chicken pieces thoroughly with the marinade, making sure to get
+                it into the cuts. For best results, cover the bowl and let it marinate in the refrigerator for at least
+                2-4 hours, or preferably overnight.
+                <br>4.) Preheat the Oven or Grill: Preheat your oven to 400°F (200°C) or heat a grill to medium-high
+                heat.
+                <br>5.) Cook the Tandoori Chicken: If using an oven, place the marinated chicken on a baking sheet lined
+                with aluminum foil. Bake for about 25-30 minutes or until the chicken is cooked through, turning once
+                halfway through the cooking time. If grilling, cook for a similar amount of time, turning occasionally
+                until the chicken is cooked.
+                <br>6.) Garnish and Serve: Once cooked, garnish the Tandoori Chicken with fresh cilantro and lemon
+                wedges. Serve hot with naan or rice and your favorite chutney or yogurt sauce.
             </p>
-            </div>
-            <button class="close-button" onclick="closeDialog()">Close</button>
         </div>
+        <button class="close-button" onclick="closeDialog()">Close</button>
+    </div>
 
-        <div class="dialog-box" id="masalaomletrecipe">
-            <div class="dialog-title">Masala Omlet</div>
-            <div class="dialog-content">
+    <div class="dialog-box" id="masalaomletrecipe">
+        <div class="dialog-title">Masala Omlet</div>
+        <div class="dialog-content" id="masalaomletrecipe_dc">
             <p><b>Ingredients:</b></p>
-                <p>3 large eggs<br>
-                    1 small onion, finely chopped<br>
-                    1 small tomato, finely chopped<br>
-                    1 green chili, finely chopped (adjust according to spice preference)<br>
-                    2 tablespoons fresh coriander (cilantro), chopped<br>
-                    1/2 teaspoon turmeric powder<br>
-                    1/2 teaspoon red chili powder (adjust according to spice preference)<br>
-                    Salt, to taste<br>
-                    2 tablespoons oil or butter for cooking<br>
-                    Optional: 1/2 cup grated cheese (cheddar or your choice)<br>
-                </p>
-                <p>Instructions:</p>
-                <p>1.) Crack the Eggs: In a bowl, crack the eggs and beat them well using a fork or whisk until the yolks and whites are well combined.
-                    <br>2.) Add Vegetables and Spices: Add the finely chopped onion, tomato, green chili, fresh coriander, turmeric powder, red chili powder, and salt to the beaten eggs. Mix everything well to ensure the ingredients are evenly distributed.
-                    <br>3.) Heat the Pan: Place a non-stick frying pan over medium heat and add 1 tablespoon of oil or butter.
-                    <br>4.) Pour the Egg Mixture: Once the oil is hot, pour the egg mixture into the pan, spreading it evenly.
-                    <br>5.) Cook the Omelette: Allow the omelette to cook for a couple of minutes until the edges start to set. Use a spatula to lift the edges slightly, allowing any uncooked egg to flow underneath.
-                    <br>6.) Optional Cheese: If using cheese, sprinkle it evenly over one half of the omelette.
-                    <br>7.) Fold and Serve: Once the edges are set and the center is mostly cooked, fold the omelette in half using the spatula. Press down gently to ensure it's cooked through.
-                    <br>8.) Transfer to a Plate: Slide the omelette onto a plate and, if desired, sprinkle some additional fresh coriander on top for garnish.
-                    <br>9.) Serve Hot: Serve the Masala Omelette hot with toasted bread, roti, or on its own. You can also pair it with ketchup or your favorite sauce.
-                </p>
-                </div>
-                <button class="close-button" onclick="closeDialog()">Close</button>
-            </div>         
-            <div class="dialog-box" id="mushroompizzarecipe">
-                <div class="dialog-title">Mushroom Pizza</div>
-                <div class="dialog-content">
-                <p><b>Ingredients:</b></p>
-                    <p><b>For the Pizza Dough:</b><br>
-                        2 1/4 teaspoons (1 packet) active dry yeast<br>
-                        1 cup warm water (about 110°F or 43°C)<br>
-                        1 teaspoon sugar<br>
-                        3 cups all-purpose flour<br>
-                        1 teaspoon salt<br>
-                        2 tablespoons olive oil<br><br>
-                        For the Pizza Toppings:<br>
-                        1/2 cup pizza sauce<br>
-                        1 1/2 cups mozzarella cheese, shredded<br>
-                        1 cup mushrooms, sliced<br>
-                        1/2 cup red onion, thinly sliced<br>
-                        2 tablespoons olive oil<br>
-                        Salt and black pepper, to taste<br>
-                        Fresh basil leaves, for garnish (optional)<br>
-                    </p>
-                    <p><b>Instructions:</b></p>
-                    <p><b>For the Pizza Dough:</b><br>
-                        1.) In a small bowl, combine warm water, sugar, and active dry yeast. Let it sit for about 5-10 minutes until the mixture becomes frothy.
-                        <br>2.) In a large mixing bowl, combine flour and salt. Make a well in the center and pour in the yeast mixture and olive oil. Mix until the dough comes together.
-                        <br>3.) Knead the dough on a floured surface for about 5-7 minutes until it becomes smooth and elastic.
-                        <br>4.) Place the dough in a lightly oiled bowl, cover it with a damp cloth, and let it rise in a warm place for about 1-1.5 hours or until it doubles in size.
-                        <br>5.) Preheat the oven to 475°F (245°C)
-                        <br>6.) Punch down the risen dough, then roll it out on a floured surface to your desired pizza crust thickness.
-                        <br><br><b>For Assembling the Mushroom Pizza:</b>
-                        <br>1.) Place the rolled-out pizza dough on a pizza stone or a baking sheet.
-                        <br>2.) Spread pizza sauce evenly over the dough, leaving a small border around the edges.
-                        <br>3.) Sprinkle shredded mozzarella cheese over the sauce.
-                        <br>4.) Evenly distribute sliced mushrooms and red onions over the cheese.
-                        <br>5.) Drizzle olive oil over the toppings and season with salt and black pepper.
-                        <br>6.) Bake in the preheated oven for about 12-15 minutes or until the crust is golden and the cheese is bubbly and slightly browned.
-                        <br>7.) Remove the pizza from the oven, let it cool for a few minutes, and then garnish with fresh basil leaves if desired.
-                        <br>8.) Slice and serve your delicious Mushroom Pizza!
-                    </p>
-                    </div>
-                    <button class="close-button" onclick="closeDialog()">Close</button>
-                </div> 
+            <p>3 large eggs<br>
+                1 small onion, finely chopped<br>
+                1 small tomato, finely chopped<br>
+                1 green chili, finely chopped (adjust according to spice preference)<br>
+                2 tablespoons fresh coriander (cilantro), chopped<br>
+                1/2 teaspoon turmeric powder<br>
+                1/2 teaspoon red chili powder (adjust according to spice preference)<br>
+                Salt, to taste<br>
+                2 tablespoons oil or butter for cooking<br>
+                Optional: 1/2 cup grated cheese (cheddar or your choice)<br>
+            </p>
+            <p>Instructions:</p>
+            <p>1.) Crack the Eggs: In a bowl, crack the eggs and beat them well using a fork or whisk until the yolks
+                and whites are well combined.
+                <br>2.) Add Vegetables and Spices: Add the finely chopped onion, tomato, green chili, fresh coriander,
+                turmeric powder, red chili powder, and salt to the beaten eggs. Mix everything well to ensure the
+                ingredients are evenly distributed.
+                <br>3.) Heat the Pan: Place a non-stick frying pan over medium heat and add 1 tablespoon of oil or
+                butter.
+                <br>4.) Pour the Egg Mixture: Once the oil is hot, pour the egg mixture into the pan, spreading it
+                evenly.
+                <br>5.) Cook the Omelette: Allow the omelette to cook for a couple of minutes until the edges start to
+                set. Use a spatula to lift the edges slightly, allowing any uncooked egg to flow underneath.
+                <br>6.) Optional Cheese: If using cheese, sprinkle it evenly over one half of the omelette.
+                <br>7.) Fold and Serve: Once the edges are set and the center is mostly cooked, fold the omelette in
+                half using the spatula. Press down gently to ensure it's cooked through.
+                <br>8.) Transfer to a Plate: Slide the omelette onto a plate and, if desired, sprinkle some additional
+                fresh coriander on top for garnish.
+                <br>9.) Serve Hot: Serve the Masala Omelette hot with toasted bread, roti, or on its own. You can also
+                pair it with ketchup or your favorite sauce.
+            </p>
+        </div>
+        <button class="close-button" onclick="closeDialog()">Close</button>
+    </div>
+    <div class="dialog-box" id="mushroompizzarecipe">
+        <div class="dialog-title">Mushroom Pizza</div>
+        <div class="dialog-content" id="mushroompizzarecipe_dc">
+            <p><b>Ingredients:</b></p>
+            <p><b>For the Pizza Dough:</b><br>
+                2 1/4 teaspoons (1 packet) active dry yeast<br>
+                1 cup warm water (about 110°F or 43°C)<br>
+                1 teaspoon sugar<br>
+                3 cups all-purpose flour<br>
+                1 teaspoon salt<br>
+                2 tablespoons olive oil<br><br>
+                For the Pizza Toppings:<br>
+                1/2 cup pizza sauce<br>
+                1 1/2 cups mozzarella cheese, shredded<br>
+                1 cup mushrooms, sliced<br>
+                1/2 cup red onion, thinly sliced<br>
+                2 tablespoons olive oil<br>
+                Salt and black pepper, to taste<br>
+                Fresh basil leaves, for garnish (optional)<br>
+            </p>
+            <p><b>Instructions:</b></p>
+            <p><b>For the Pizza Dough:</b><br>
+                1.) In a small bowl, combine warm water, sugar, and active dry yeast. Let it sit for about 5-10 minutes
+                until the mixture becomes frothy.
+                <br>2.) In a large mixing bowl, combine flour and salt. Make a well in the center and pour in the yeast
+                mixture and olive oil. Mix until the dough comes together.
+                <br>3.) Knead the dough on a floured surface for about 5-7 minutes until it becomes smooth and elastic.
+                <br>4.) Place the dough in a lightly oiled bowl, cover it with a damp cloth, and let it rise in a warm
+                place for about 1-1.5 hours or until it doubles in size.
+                <br>5.) Preheat the oven to 475°F (245°C)
+                <br>6.) Punch down the risen dough, then roll it out on a floured surface to your desired pizza crust
+                thickness.
+                <br><br><b>For Assembling the Mushroom Pizza:</b>
+                <br>1.) Place the rolled-out pizza dough on a pizza stone or a baking sheet.
+                <br>2.) Spread pizza sauce evenly over the dough, leaving a small border around the edges.
+                <br>3.) Sprinkle shredded mozzarella cheese over the sauce.
+                <br>4.) Evenly distribute sliced mushrooms and red onions over the cheese.
+                <br>5.) Drizzle olive oil over the toppings and season with salt and black pepper.
+                <br>6.) Bake in the preheated oven for about 12-15 minutes or until the crust is golden and the cheese
+                is bubbly and slightly browned.
+                <br>7.) Remove the pizza from the oven, let it cool for a few minutes, and then garnish with fresh basil
+                leaves if desired.
+                <br>8.) Slice and serve your delicious Mushroom Pizza!
+            </p>
+        </div>
+        <button class="close-button" onclick="closeDialog()">Close</button>
+    </div>
     <footer>
         <p>&copy; 2023 NoshNest Bistro. All rights reserved.</p>
     </footer>
@@ -268,17 +318,51 @@
     <script>
         function showReciepe(dailogid) {
             closeDialog();
-            document.getElementById(dailogid).style.display="flow-root";
+            document.getElementById(dailogid).style.display = "flow-root";
         }
         function closeDialog() {
             //document.getElementById(dailogid).style.display="none";
             const nodeList = document.querySelectorAll(".dialog-box");
             for (let i = 0; i < nodeList.length; i++) {
-                    nodeList[i].style.display = 'none';
-                    console.log(nodeList[i].id);
-                }
+                nodeList[i].style.display = 'none';
+                console.log(nodeList[i].id);
+            }
         }
+
+
+        function checkReading() {
+           // if (checkReading.read) {
+            //    return;
+            //}
+            console.log(this.scrollHeight);
+            console.log(this.scrollTop);
+            console.log(this.clientHeight);
+            checkReading.read =
+                this.scrollHeight - Math.round(this.scrollTop) === this.clientHeight;
+           
+            if (checkReading.read)
+            {
+                aptrinsic('track', 'Recipe Scroll End', '{"Recipe Name": "' + this.id + '",IsRead" : true }'); 
+
+                console.log("You are at the end");
+            }  
+            else      
+            console.log("Scrolling");
+        }
+
+        onload = () => {
+            const oToBeReadArr = document.getElementsByClassName("dialog-content");
+            for (let i = 0; i < oToBeReadArr.length; i++) {
+                oToBeReadArr[i].onscroll = checkReading;
+                
+            }
+            
+
+           // checkReading.call(oToBeRead);
+        };
+
     </script>
 
 </body>
+
 </html>

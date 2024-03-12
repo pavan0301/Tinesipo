@@ -334,7 +334,7 @@
            // if (checkReading.read) {
             //    return;
             //}
-            console.log(this.scrollHeight);
+           // console.log(this.scrollHeight);
             console.log(this.scrollTop);
             console.log(this.clientHeight);
             checkReading.read =
@@ -342,8 +342,11 @@
            
             if (checkReading.read)
             {
-                aptrinsic('track', 'Recipe Scroll End', '{"Recipe Name": "' + this.id + '",IsRead" : true }'); 
+                var data = '{"Recipe Name": "' + this.id + '",IsRead" : true }';
+                console.log(data);
+                aptrinsic('track', 'Recipe Scroll End', data); 
 
+                console.log(this.id);
                 console.log("You are at the end");
             }  
             else      

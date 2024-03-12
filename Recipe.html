@@ -335,14 +335,14 @@
             //    return;
             //}
            // console.log(this.scrollHeight);
-            console.log(this.scrollTop);
-            console.log(this.clientHeight);
+           // console.log(this.scrollTop);
+           // console.log(this.clientHeight);
             checkReading.read =
                 this.scrollHeight - Math.round(this.scrollTop) === this.clientHeight;
            
             if (checkReading.read)
             {
-                var data = '{"Recipe Name": "' + this.id + '",IsRead" : true }';
+                var data = '{"Recipe Name": "' + this.id + '","IsRead" : "true" }';
                 console.log(data);
                 aptrinsic('track', 'Recipe Scroll End', data); 
 
